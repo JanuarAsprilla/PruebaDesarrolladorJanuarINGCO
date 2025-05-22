@@ -10,8 +10,8 @@ Este proyecto es una prueba técnica solicitada por INGCO. La aplicación fue de
 4. **Formulario para adicionar usuarios**: Se incluye un formulario controlado para añadir nuevos usuarios.
 5. **Eliminación de usuarios**: Cada fila tiene un botón de eliminar con confirmación previa.
 6. **Estilos personalizados**: Estilos aplicados con **Tailwind CSS**.
-7. **Repositorio en GitHub**: [https://github.com/usuario/nombre-proyecto](#)
-8. **Despliegue público**: [https://nombre-proyecto.vercel.app](#)
+7. **Repositorio en GitHub**: [https://github.com/JanuarAsprilla/PruebaDesarrolladorJanuarINGCO](#)
+8. **Despliegue público**: [https://prueba-desarrollador-januar-ingco.vercel.app/](#)
 
 ## 🚀 Tecnologías usadas
 
