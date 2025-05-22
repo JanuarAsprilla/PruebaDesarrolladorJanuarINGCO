@@ -1,54 +1,31 @@
-# React + TypeScript + Vite
+# Prueba Técnica React - INGCO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una prueba técnica solicitada por INGCO. La aplicación fue desarrollada con **React + TypeScript**, y se enfoca en el consumo de una API REST para mostrar, crear y eliminar usuarios.
 
-Currently, two official plugins are available:
+## 🧠 Requerimientos cumplidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Lectura de la API**: Se consume la API https://api.fake-rest.refine.dev/users y se almacena la respuesta.
+2. **Tabla de usuarios**: Se muestran los campos `firstName`, `lastName` y `email`.
+3. **Filtrado por status**: Solo se muestran usuarios cuyo campo `status` sea `true`.
+4. **Formulario para adicionar usuarios**: Se incluye un formulario controlado para añadir nuevos usuarios.
+5. **Eliminación de usuarios**: Cada fila tiene un botón de eliminar con confirmación previa.
+6. **Estilos personalizados**: Estilos aplicados con **Tailwind CSS**.
+7. **Repositorio en GitHub**: [https://github.com/usuario/nombre-proyecto](#)
+8. **Despliegue público**: [https://nombre-proyecto.vercel.app](#)
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Vercel (para despliegue)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧩 Componentes principales
+- `UserTable`: renderiza la tabla con los usuarios filtrados.
+- `UserForm`: permite añadir un nuevo usuario.
+- `App`: maneja el estado global y las funciones principales.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
